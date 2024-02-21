@@ -12,7 +12,7 @@
   type: time_table
   contents:
     - title: PhD
-      institution: University of Amsterdam, the Netherlands
+      institution: University of Amsterdam,  the Netherlands
       year: 2023
       description:
         - Label-efficient Learning in Computer Vision
