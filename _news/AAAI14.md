@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
- An [editing method on latent flow matching](https://taohu.me/lfm/) is accepted by AAAI 2024:sparkles:
+ An [editing method on latent flow matching](https://taohu.me/lfm/) is accepted by  AAAI 2024:sparkles:
 
