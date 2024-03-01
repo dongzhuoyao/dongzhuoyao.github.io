@@ -1,87 +1,34 @@
-"Hu":
-  - firstname: ["Vincent Tao", "Tao"]
-    url: https://taohu.me/
-"Hu*":
-  - firstname: ["Vincent Tao", "Tao"]
-    url: https://taohu.me/
-"Thong":
-  - firstname: ["William"]
-    url: https://scholar.google.nl/citations?user=CPuz5p4AAAAJ&hl=en
-"Asano":
-  - firstname: ["Yuki M."]
-    url: https://yukimasano.github.io/
-"Zhang":
-  - firstname: ["David W"]
-    url: https://davzha.netlify.app/
-"Gavves":
-  - firstname: ["Efstratios"]
-    url: https://www.egavves.com/
-"Mettes":
-  - firstname: ["Pascal"]
-    url: https://staff.fnwi.uva.nl/p.s.m.mettes/
+"adams":
+  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-"Burghouts":
-  - firstname: ["Gertjan J.", "Gertjan"]
-    url: https://gertjanburghouts.github.io/
+"podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-"Fernando":
-  - firstname: ["Basura"]
-    url: https://basurafernando.github.io/
+"rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-"Yu":
-  - firstname: ["Gang"]
-    url: http://www.skicyyu.org/
+"bach":
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
-"Wu":
-  - firstname: ["Di"]
-    url: https://moore3930.github.io/
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
+"przibram":
+  - firstname: ["Karl"]
+    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
 
-"Chen*":
-  - firstname: ["Yunlu"]
-    url: https://yunlu-chen.github.io/
+"schrodinger":
+  - firstname: ["Erwin"]
+    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
 
-"Chen":
-  - firstname: ["Yunlu"]
-    url: https://yunlu-chen.github.io/
+"lorentz":
+  - firstname: ["Hendrik Antoon"]
+    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
 
- 
-"Caron":
-  - firstname: ["Mathilde"]
-    url: https://scholar.google.com/citations?user=eiB0s-kAAAAJ&hl=fr
-
-"Ommer":
-  - firstname: ["Björn"]
-    url: https://ommer-lab.com/people/
-
-"Tang":
-  - firstname: ["Meng"]
-    url: http://mengtang.org/
-
-"Zhao":
-  - firstname: ["Deli"]
-    url: https://scholar.google.com/citations?user=7LhjCn0AAAAJ&hl=en
-
-"Chen":
-  - firstname: ["Shuo"]
-    url: https://shanshuo.github.io/
-
-"Mu":
-  - firstname: ["Yadong"]
-    url: http://www.muyadong.com/
-
-"Mensink":
-  - firstname: ["Thomas"]
-    url: https://www.mensink.nu/
-
-"Lippe":
-  - firstname: ["Phillip"]
-    url: https://phlippe.github.io/
-"Snoek":
-  - firstname: ["Cees", "Cees G.M.", "Cees GM"]
-    url: https://www.ceessnoek.info/
-
-"Ommer":
-  - firstname: ["Björn", "Bjorn"]
-    url: https://scholar.google.de/citations?user=zWbvIUcAAAAJ&hl=en
-
+"planck":
+  - firstname: ["Max"]
+    url: https://en.wikipedia.org/wiki/Max_Planck
