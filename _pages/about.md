@@ -33,7 +33,7 @@ I am a Postdoctoral Research Fellow  with [Björn Ommer](https://scholar.google.
 Focused on introducing inductive bias into neural network to achieve data-efficiency by few-shot learning, generative model, etc. Have a conviction that generative modelling will be the future of discriminative modelling.
 
 <p align="justify" class="content" style="color:#red">
-            <strong>I'm on the job market. Feel free to contact me. [Generative AI Expert]</strong>
+            <strong>I'm on the job market. Feel free to contact me. </strong>
             </p>
 
   <p align="justify" class="content" style="color:#red">
