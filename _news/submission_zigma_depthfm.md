@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-A [DiT-style Mamba-based diffusion models](https://arxiv.org/abs/2403.13802) has been released, co-authored by Stefan Baumann, Bjorn Ommer and other phd students in CompVis lab. Stay tuned for updates. :sparkles:
+A [DiT-style Mamba-based diffusion models](https://arxiv.org/abs/2403.13802) has been released, co-authored by Stefan Baumann, Bjorn Ommer and other phd students in CompVis lab. Stay tuned for updates. :sparkles: 
 
