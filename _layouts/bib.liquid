@@ -212,7 +212,7 @@
             <strong style="border-width:2px; border-style:solid;color:red;padding:0.1em">{{ entry.highlight }}</strong>
         {%- endif %}
         {% if entry.repostar %}
-            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{entry.repostar}}" href="https://github.com/{{entry.repostar}}">
+            <a href="https://github.com/{{entry.repostar}}"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{entry.repostar}}"> </a>
         {%- endif %}
     </div>
     {% if site.enable_publication_badges %}
