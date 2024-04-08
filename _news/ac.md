@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-I am honored to be invited as the Area Chair of <AI for Content Creation Workshop
-@ CVPR 2024>, <Efficient Large Vision Models Workshop @ CVPR 2024>.
+I am honored to be invited as the Area Chair of [AI for Content Creation Workshop
+@ CVPR 2024](https://ai4cc.net/), [Efficient Large Vision Models Workshop @ CVPR 2024](https://cvpr.thecvf.com/virtual/2024/workshop/23578).
 
