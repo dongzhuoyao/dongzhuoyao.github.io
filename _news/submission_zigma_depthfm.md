@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Two papers got accepted by ECCV! and  [DiT-style Mamba-based diffusion models](https://arxiv.org/abs/2403.13802) has been accepted by oral in [ICML Workshop on Long Context Foundation Models (LCFM)](https://longcontextfm.github.io/)  :sparkles: 
+Two papers got accepted by ECCV! and  [DiT-style Mamba-based diffusion models](https://arxiv.org/abs/2403.13802) has been accepted as oral in [ICML Workshop on Long Context Foundation Models (LCFM)](https://longcontextfm.github.io/)  :sparkles: 
 
