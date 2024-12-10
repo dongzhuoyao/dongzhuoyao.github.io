@@ -1,3 +1,4 @@
 Gemfile.lock
 _site/
 .tweet-cache/
+.DS_Store
