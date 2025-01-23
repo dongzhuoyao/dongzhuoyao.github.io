@@ -24,17 +24,17 @@
         #  contents:
         #    - Sub-description 1.
         #    - Sub-description 2.
-    - title: Master
-      institution: Peking University, China
-      year: 2018
-      description:
-        - Computer Vision
-        #- Description 2.
-    - title: Bachelor
-      institution: Wuhan University, China
-      year: 2012
-      description:
-        - Geodesy
+   # - title: Master
+   #   institution: Peking University, China
+   #   year: 2018
+   #   description:
+   #     - Computer Vision
+    x    #- Description 2.
+   # - title: Bachelor
+   #   institution: Wuhan University, China
+   #   year: 2012
+   #   description:
+   #     - Geodesy
         #- Description 2.
 #- title: Supervision and Cooporations
 #  type: map
