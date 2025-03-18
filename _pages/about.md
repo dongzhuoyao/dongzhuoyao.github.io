@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://ommer-lab.com'>Ommer Lab</a>.
+subtitle: <a href='https://ommer-lab.com'>Ommer Lab</a>, <a href='https://mcml.ai/team/juniors/'>MCML Junior Member</a>.
 
 profile:
   align: right
