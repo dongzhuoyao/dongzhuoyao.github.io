@@ -43,5 +43,10 @@ Focused on introducing inductive bias into neural network to achieve data-effici
                   
 </p>
 
+<div>
+<img src="./assets/img/wechat.jpeg" height="260" alt="Tao Hu's wechat" border="0">
+</div>
+
+
 
 
