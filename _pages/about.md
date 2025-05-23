@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-[Vincent教你学AI课程链接](https://taohu.me/vincent-genai-course/)
+[Vincent教你学AI(rednote)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10)
 
 I am a Postdoctoral Research Fellow  with [Björn Ommer](https://scholar.google.de/citations?user=zWbvIUcAAAAJ&hl=en) in [Ommer-Lab ( Stable Diffusion Lab )](https://ommer-lab.com/), focused on exploring the [scalability and generalization ablity of diffusion model in the nxtaim project](https://nxtaim.de/). I finished my PhD at VISLab, University of Amsterdam.
 
