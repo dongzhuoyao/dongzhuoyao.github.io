@@ -9,9 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-   <p>Computer Vision & Learning Group</p>
-    <p>Akademiestr. 7,Munich</p>
-    <p>Ludwig Maximilian University of Munich</p>
+   <p>PHD</p>
+    
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -20,19 +19,6 @@ social: true # includes social icons at the bottom of the page
 ---
 
 [Vincent教你学AI(rednote)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10)
-
-I am a Postdoctoral Research Fellow  with [Björn Ommer](https://scholar.google.de/citations?user=zWbvIUcAAAAJ&hl=en) in [Ommer-Lab ( Stable Diffusion Lab )](https://ommer-lab.com/), focused on exploring the [scalability and generalization ablity of diffusion model in the nxtaim project](https://nxtaim.de/). I finished my PhD at VISLab, University of Amsterdam.
-
-<p align="justify" class="content" style="color:#red">
-            <strong>I am recruiting for Bachelor, Master and PhD supervision in Munich and globally. If you're interested in collaborating, feel free to send an email.</strong>
-            </p>
-
-<p align="justify" class="content" style="color:#red">
-            <strong>Open to discussion and collaboration, feel free to send an email.</strong>
-            </p>
-
-Focused on introducing inductive bias into neural network to achieve data-efficiency by few-shot learning, generative model, etc. Have a conviction that generative modelling will be the future of discriminative modelling.
-
 
 
   <p align="justify" class="content" style="color:#red">
