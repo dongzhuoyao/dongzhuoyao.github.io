@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://ommer-lab.com'>Ommer Lab</a>, <a href='https://mcml.ai/team/juniors/'>MCML Junior Member</a>.
+subtitle: 
 
 profile:
   align: right
@@ -22,11 +22,10 @@ social: true # includes social icons at the bottom of the page
 
 
   <p align="justify" class="content" style="color:#red">
-                <strong><a href="https://scholar.google.com/citations?hl=en&amp;user=EchdyZEAAAAJ" target="_blank">Publication</a></strong>
+                <strong><a href="https://scholar.google.com/citations?hl=en&amp;user=EchdyZEAAAAJ" target="_blank">Scholar</a></strong>
                   | <strong><a href="https://github.com/dongzhuoyao" target="_blank">GitHub</a>  </strong>
                   |<strong>  <br> <a href="https://www.linkedin.com/in/taohu620/" target="_blank">LinkedIn</a>  </strong>
-                  |<strong>  <a href="https://taohu.notion.site/Research-Note-b95da0911249407488ccf9e3f6730085" target="_blank">Research Note</a>  </strong>  
-                  |<strong> <a href="https://cal.com/hu-tao-leakvj/30min" target="_blank">Chat with me</a>  </strong> | <a href="https://www.buymeacoffee.com/taohu620i"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=🌈&slug=taohu620i&button_colour=5F7FFF&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00" /></a>
+                  |<strong> <a href="https://cal.com/hu-tao-leakvj/30min" target="_blank">Chat</a>  </strong> | <a href="https://www.buymeacoffee.com/taohu620i"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=🌈&slug=taohu620i&button_colour=5F7FFF&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00" /></a>
                   
 </p>
 
