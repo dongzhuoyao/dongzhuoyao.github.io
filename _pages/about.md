@@ -2,36 +2,22 @@
 layout: about
 title: About
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-   <p>XYZ</p>
-    
+    <p><a href="https://cal.com/hu-tao-leakvj/30min" target="_blank">📅 Book a Chat</a></p>
+    <p><a href="https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10" target="_blank">📕 Vincent教你学AI</a></p>
+    <p><a href="https://www.buymeacoffee.com/taohu620i" target="_blank">☕ Buy me a coffee</a></p>
 
-news: false # includes a list of news items
-latest_posts: false # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false
+latest_posts: false
+selected_papers: false
+social: true
 ---
-
-[Vincent教你学AI (小红书)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10)
-
-
-  <p align="justify" class="content" style="color:#red">
-                <strong><a href="https://scholar.google.com/citations?hl=en&amp;user=EchdyZEAAAAJ" target="_blank">Scholar</a></strong>
-                  | <strong><a href="https://github.com/dongzhuoyao" target="_blank">GitHub</a>  </strong>
-                  |<strong>  <br> <a href="https://www.linkedin.com/in/taohu620/" target="_blank">LinkedIn</a>  </strong>
-                  |<strong> <a href="https://cal.com/hu-tao-leakvj/30min" target="_blank">Chat</a>  </strong> | <a href="https://www.buymeacoffee.com/taohu620i"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=🌈&slug=taohu620i&button_colour=5F7FFF&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00" style="height: 10px; width: auto;" /></a>
-                  
-</p>
-
-<div>
-<img src="./assets/img/wechat.jpeg" height="260" alt="Tao Hu's wechat" border="0">
-</div>
 
 
 
