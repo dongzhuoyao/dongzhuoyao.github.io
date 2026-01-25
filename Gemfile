@@ -1,4 +1,14 @@
 source 'https://rubygems.org'
+
+# Ruby 3.4+ / 4.0 stdlib gems (removed from default gems)
+gem 'base64'
+gem 'benchmark'
+gem 'bigdecimal'
+gem 'csv'
+gem 'mutex_m'
+gem 'observer'
+gem 'ostruct'
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'

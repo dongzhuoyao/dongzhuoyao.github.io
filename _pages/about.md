@@ -6,7 +6,6 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p><a href="https://cal.com/hu-tao-leakvj/30min" target="_blank">📅 Book a Chat</a></p>
