@@ -49,7 +49,7 @@ layout: default
     {% endif %}
 
     <!-- Latest posts -->
-    {% if page.latest_posts %}
+    {% if site.latest_posts.enabled %}
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
@@ -73,10 +73,13 @@ layout: default
       </div>
     {% endif %}
 
+    {% if site.newsletter.enabled and site.footer_fixed %}
+      {% include scripts/newsletter.liquid center=true %}
+    {% endif %}
   </article>
 </div>
 
+<!-- Custom tracking scripts -->
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=21CLf19jYJsPiUe2kjErKACvUCh1zZ2lnWcRCsPJRa4'></script>
 
-   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=21CLf19jYJsPiUe2kjErKACvUCh1zZ2lnWcRCsPJRa4'></script>
-    
-    <a href="https://scholar.google.com/citations?hl=en&user=EchdyZEAAAAJ" target="_blank"> <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdongzhuoyao%2Facad-homepage%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
+<a href="https://scholar.google.com/citations?hl=en&user=EchdyZEAAAAJ" target="_blank"> <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdongzhuoyao%2Facad-homepage%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
