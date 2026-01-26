@@ -25,7 +25,7 @@ social: true
 
 <img src="https://ghchart.rshah.org/0076df/dongzhuoyao" alt="GitHub Contributions" style="width: 100%; max-width: 800px;">
 
-<img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['19','20','21','22','23','24','25'],datasets:[{data:[17,33,92,112,143,272,557],backgroundColor:'rgba(0,118,223,0.8)'}]},options:{plugins:{legend:{display:false},title:{display:true,text:'Citations: 1,252',font:{size:10}},datalabels:{display:false}},scales:{y:{display:false},x:{grid:{display:false},ticks:{font:{size:8}}}}}}&w=250&h=120&bkg=white" alt="Citation Trend" style="width: 100%; max-width: 250px;">
+<img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['19','20','21','22','23','24','25'],datasets:[{data:[17,33,92,112,143,272,557],backgroundColor:'rgba(0,118,223,0.8)'}]},options:{plugins:{legend:{display:false},title:{display:true,text:'Citations: 1,252',font:{size:12}},datalabels:{display:false}},scales:{y:{display:false},x:{grid:{display:false},ticks:{font:{size:10}}}}}}&w=400&h=200&bkg=white" alt="Citation Trend" style="width: 100%; max-width: 400px;">
 
 <small style="opacity: 0.3;"><a href="https://scholar.google.com/citations?hl=en&user=EchdyZEAAAAJ"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdongzhuoyao%2Facad-homepage%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" alt="Google Scholar"></a> · [visitor stats](https://clustrmaps.com/site/1ab0d)</small>
 
