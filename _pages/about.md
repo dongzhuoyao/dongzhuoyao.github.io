@@ -22,6 +22,8 @@ social: true
 [cal.com](https://cal.com/hu-tao-leakvj/30min) ·
 [buy me a coffee](https://www.buymeacoffee.com/taohu620i)
 
+<img src="https://ghchart.rshah.org/0076df/dongzhuoyao" alt="GitHub Contributions" style="width: 100%; max-width: 800px;">
+
 
 
 
