@@ -14,7 +14,7 @@ social: true
 
 ```
 > Researcher
-> interests: Generative Models, LLM
+> interests: Vibe Coding for Generative Models, LLM
 ```
 
 [publications](/publications/) ·
