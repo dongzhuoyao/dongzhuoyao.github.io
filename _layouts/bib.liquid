@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-3 abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -41,7 +41,7 @@
           %}
         {% endif %}
       {% else %}
-        <div class="preview z-depth-1 rounded" style="background: linear-gradient(135deg, #0076df 0%, #00369f 100%); width: 100px; height: 75px; display: flex; align-items: center; justify-content: center;">
+        <div class="preview z-depth-1 rounded" style="background: linear-gradient(135deg, #0076df 0%, #00369f 100%); width: 150px; height: 100px; display: flex; align-items: center; justify-content: center;">
           <span style="color: white; font-family: monospace; font-size: 10px; opacity: 0.7;">📄</span>
         </div>
       {% endif %}
@@ -49,7 +49,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-7{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -253,6 +253,11 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if entry.repostar %}
+        <a href="https://github.com/{{ entry.repostar }}" class="btn btn-sm z-depth-0 p-0" role="button" style="background: transparent; border: none;">
+          <img src="https://img.shields.io/github/stars/{{ entry.repostar }}?style=social" alt="GitHub stars">
+        </a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
