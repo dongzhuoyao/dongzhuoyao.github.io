@@ -37,3 +37,6 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+// Custom overrides (keep at end to override defaults)
+@use "custom";
