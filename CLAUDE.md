@@ -6,6 +6,7 @@ This file provides guidance to Claude Code when working with this repository.
 # Rules
 
 - Try to avoid changing the template files, and follow the upstream repo.
+- Always respect the implementation of the upstream, so we can enjoy the feature design of them.
 - This is a lab website - keep content focused on the research group.
 
 ## Project Overview
