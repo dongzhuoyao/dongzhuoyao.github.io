@@ -17,8 +17,8 @@ social: true
 > interests: Vibe Coding for Generative Models, LLM
 ```
 
-[publications](/publications/) ·
 [Group](https://taohu.me/lab) ·
+[publications](/publications/) ·
 [Vincent教你学AI (rednote)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10) ·
 [cal.com](https://cal.com/hu-tao-leakvj/30min) ·
 [buy me a coffee](https://www.buymeacoffee.com/taohu620i) ·
