@@ -17,11 +17,6 @@ social: true
 > interests: Vibe Coding for Generative Models, LLM
 ```
 
-<div class="alert alert-danger text-center" role="alert" style="border: 2px solid #dc3545; padding: 15px; margin: 15px 0;">
-  <strong>We are hiring for Fall 2025!</strong> 2 PhD · Several Master's · Bachelor's welcome<br>
-  <a href="/lab/#open-positions-fall-2025">See open positions →</a>
-</div>
-
 [Group](https://taohu.me/lab) ·
 [publications](/publications/) ·
 [Vincent教你学AI (rednote)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10) ·
