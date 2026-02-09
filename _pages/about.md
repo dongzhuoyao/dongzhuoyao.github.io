@@ -18,6 +18,7 @@ social: true
 ```
 
 [Group](https://taohu.me/lab) ·
+[**Hiring Fall 2025: PhD / Master's / Bachelor's**](/lab/#open-positions-fall-2025) ·
 [publications](/publications/) ·
 [Vincent教你学AI (rednote)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10) ·
 [cal.com](https://cal.com/hu-tao-leakvj/30min) ·

@@ -6,10 +6,34 @@ nav: false
 description: Research Lab
 ---
 
-<div class="alert alert-info text-center" role="alert">
-  <strong>We are actively recruiting!</strong> PhD students, PostDocs, Research Assistants (>6 months), and Visiting Students.<br>
-  Research interests: <em>Generative Models, Flow Matching, LLMs, Computer Vision</em>
+<div class="alert alert-danger text-center" role="alert" style="border: 2px solid #dc3545; padding: 20px;">
+  <h4 style="margin-bottom: 10px;">We are actively recruiting for Fall 2025!</h4>
+  <p style="margin-bottom: 8px;">
+    <strong>2 PhD positions</strong> · <strong>Several Master's positions</strong> · <strong>Bachelor's students also welcome</strong>
+  </p>
+  <p style="margin-bottom: 8px;">
+    Research interests: <em>Generative Models, Flow Matching, LLMs, Computer Vision</em>
+  </p>
+  <p style="margin-bottom: 0;">
+    PostDocs, Research Assistants (>6 months), and Visiting Students are also welcome.<br>
+    <strong>Interested? Reach out via <a href="https://cal.com/hu-tao-leakvj/30min">cal.com</a> or email.</strong>
+  </p>
 </div>
+
+---
+
+## Open Positions (Fall 2025)
+
+We have multiple openings for motivated students to join our group starting **Fall 2025**:
+
+| Position | Openings | Note |
+|----------|----------|------|
+| **PhD Student** | 2 | Fully funded. Strong background in deep learning / generative models preferred. |
+| **Master's Student** | Several | Research-oriented master's thesis projects available. |
+| **Bachelor's Student** | Open | Undergraduate researchers are welcome to join ongoing projects. |
+| **PostDoc / Research Assistant / Visiting Student** | Open | Contact us for details. |
+
+**How to apply:** Send your CV, transcripts, and a brief research statement to [taohu620@gmail.com](mailto:taohu620@gmail.com), or book a meeting via [cal.com](https://cal.com/hu-tao-leakvj/30min).
 
 ---
 
