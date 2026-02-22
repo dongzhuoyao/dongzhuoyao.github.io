@@ -46,3 +46,28 @@ p {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+// News section on homepage - clean minimal style
+.news {
+  .table-responsive {
+    max-height: none !important;
+  }
+
+  table.table {
+    margin-bottom: 0;
+
+    tr {
+      th {
+        font-weight: 400;
+        color: var(--global-text-color-light);
+        font-size: 0.85em;
+        white-space: nowrap;
+        padding-left: 0;
+      }
+
+      td {
+        padding-right: 0;
+      }
+    }
+  }
+}

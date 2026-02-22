@@ -6,10 +6,14 @@ subtitle:
 
 profile: false
 
-news: false
+news: true
 latest_posts: false
 selected_papers: false
 social: true
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 1
 ---
 
 ```
