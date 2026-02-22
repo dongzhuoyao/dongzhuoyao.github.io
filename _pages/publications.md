@@ -15,6 +15,9 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+<h2 class="bibliography">Arxiv</h2>
+{% bibliography --group_by none --group_order descending --query @*[booktitle=Arxiv] %}
+
+{% bibliography --group_by year --group_order descending --query @*[booktitle!=Arxiv] %}
 
 </div>

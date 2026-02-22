@@ -24,11 +24,32 @@
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
-    text-align: right;
+    color: var(--global-theme-color);
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.2em;
+      background-color: var(--global-theme-color);
+      margin-right: 0.6rem;
+      vertical-align: text-bottom;
+      border-radius: 2px;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 
   ol.bibliography {
@@ -37,10 +58,32 @@
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        background-color: var(--global-code-bg-color);
+        border-color: var(--global-divider-color);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        transform: translateY(-1px);
+      }
 
       .preview {
         display: inline-block;
+        overflow: hidden;
+        border-radius: 6px;
+        transition: transform 0.25s ease;
+
+        img {
+          transition: transform 0.3s ease;
+        }
+      }
+
+      &:hover .preview img {
+        transform: scale(1.03);
       }
 
       .abbr {
@@ -51,6 +94,9 @@
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
+          font-weight: 600;
+          letter-spacing: 0.04em;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 
           a {
             color: white;
@@ -69,9 +115,14 @@
 
       .title {
         font-weight: bolder;
+        font-size: 1.02em;
+        line-height: 1.4;
       }
 
       .author {
+        margin-top: 0.2rem;
+        line-height: 1.5;
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -98,19 +149,38 @@
         }
       }
 
+      .periodical {
+        font-size: 0.92em;
+        color: var(--global-text-color-light);
+        margin-top: 0.15rem;
+
+        em {
+          color: var(--global-text-color);
+        }
+      }
+
       .links {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+
         a.btn {
           color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          border: 1px solid var(--global-divider-color);
+          padding: 0.15rem 0.65rem;
           margin-left: 0;
+          border-radius: 4px;
+          font-size: 0.78rem;
+          font-weight: 500;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
+            background-color: rgba(var(--global-theme-color-rgb, 0, 118, 223), 0.06);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
           }
         }
         a.award.btn {
@@ -120,6 +190,7 @@
 
       .badges {
         padding-bottom: 0.5rem;
+        margin-top: 0.3rem;
         span {
           display: inline-block;
           color: v.$black-color;
@@ -138,11 +209,7 @@
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
         p {
           line-height: 1.4em;
@@ -158,19 +225,19 @@
 
       .hidden.open {
         max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
+        border-radius: 6px;
+        margin-top: 0.4rem;
       }
 
       div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+        border-color: var(--global-divider-color);
+        background-color: var(--global-code-bg-color);
+        padding: 0.5rem;
       }
     }
     div.award.hidden {
@@ -179,6 +246,17 @@
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
+  }
+}
+
+// Search bar enhancement
+.bibsearch-form-input {
+  transition: all 0.25s ease;
+
+  &:focus {
+    border-color: var(--global-theme-color) !important;
+    box-shadow: 0 0 0 3px rgba(var(--global-theme-color-rgb, 0, 118, 223), 0.1),
+                rgba(0, 0, 0, 0.05) 0px 1px 2px;
   }
 }
 
