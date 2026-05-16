@@ -18,7 +18,7 @@ announcements:
 
 ```
 > Full Professor, Huazhong University of Science and Technology (HUST)
-> interests: Vibe Coding for Generative Models, LLM
+> interests: Generative Models, VLM, VLA, LLM
 ```
 
 [Group](https://taohu.me/lab) ·
