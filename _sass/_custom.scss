@@ -94,3 +94,78 @@ a.lab-link-highlight {
     }
   }
 }
+
+// Homepage: a compact academic profile with clear section hierarchy.
+.home-page {
+  font-size: 15px;
+  line-height: 1.65;
+
+  .post-header { margin-bottom: 1.1rem; }
+  .post-title { font-size: clamp(2.3rem, 6vw, 3rem); letter-spacing: -0.04em; line-height: 1.15; }
+  .home-role { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.1rem; }
+  .home-affiliation { color: var(--global-text-color-light); }
+  .home-interests { margin: 0.9rem 0 1.4rem; }
+  .home-interests span { margin: 0 0.45rem; color: var(--global-text-color-light); }
+
+  .home-recruiting {
+    padding: 1rem 1.2rem;
+    border-left: 3px solid #d6a827;
+    background: var(--global-code-bg-color);
+    border-radius: 0 0.5rem 0.5rem 0;
+    p { margin: 0.25rem 0 0; }
+  }
+
+  .home-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.2rem;
+    margin: 1.25rem 0 2rem;
+    font-size: 0.88rem;
+    .lab-link-highlight, .home-publications-link { padding: 0.45rem 0.85rem; font-weight: 600; }
+    .home-publications-link { border: 1px solid var(--global-divider-color); border-radius: 0.35rem; }
+  }
+
+  .home-news, .home-preprints, .home-activity {
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1.4rem;
+    margin-top: 1.7rem;
+  }
+  h2 { font-size: 1.25rem; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .home-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    > a { font-size: 0.8rem; }
+  }
+  .news table.table th { width: 7.5rem !important; padding-top: 0.5rem; }
+  .news table.table td { padding: 0.4rem 0 0.7rem 1rem; }
+
+  .home-preprints {
+    ul { list-style: none; padding: 0; margin-bottom: 0; }
+    li { margin: 0; padding: 0.7rem 0; border-bottom: 1px solid var(--global-divider-color); }
+    li:last-child { border-bottom: 0; padding-bottom: 0; }
+    li strong { margin-right: 0.6rem; font-size: 0.8rem; font-weight: 400; color: var(--global-text-color-light); }
+    li a { font-weight: 500; }
+  }
+  .home-activity img { width: 100%; max-width: 800px; height: auto; }
+  .home-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.8rem;
+    font-size: 0.75rem;
+    img { width: auto; max-width: 100%; }
+  }
+  .social { margin: 2rem 0 1rem; text-align: left; }
+  .social .contact-icons { font-size: 2rem; }
+  a:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
+
+  @media (max-width: 575px) {
+    .home-links { gap: 0.75rem 1rem; }
+    .news table.table th { width: 5.7rem !important; font-size: 0.75rem; }
+    .news table.table td { padding-left: 0.6rem; }
+    .home-preprints li strong { display: block; }
+  }
+}

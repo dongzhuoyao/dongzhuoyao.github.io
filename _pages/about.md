@@ -13,29 +13,31 @@ social: true
 recent_preprints: |
   ## Recent preprints
 
-  - **Aug 29, 2026** — [GramLoop: Training-Free Gram-Gated Replay for Robust Dense Prediction](https://arxiv.org/abs/2608.29113)
-  - **Aug 29, 2026** — [Training-Free Hidden-State Refinement for Flow-Matching Image Generators](https://arxiv.org/abs/2608.29160)
-  - **Aug 25, 2026** — [From State to Action: OODA-Tool for Reliable Multi-Turn Tool Use](https://arxiv.org/abs/2608.24368)
+  - **Aug 29, 2026** [GramLoop: Training-Free Gram-Gated Replay for Robust Dense Prediction](https://arxiv.org/abs/2608.29113)
+  - **Aug 29, 2026** [Training-Free Hidden-State Refinement for Flow-Matching Image Generators](https://arxiv.org/abs/2608.29160)
+  - **Aug 25, 2026** [From State to Action: OODA-Tool for Reliable Multi-Turn Tool Use](https://arxiv.org/abs/2608.24368)
 announcements:
   enabled: true
   scrollable: true
   limit: 2
 ---
 
-```
-> Full Professor, Huazhong University of Science and Technology (HUST)
-> interests: Generative Models, VLM, VLA, LLM
-```
+<div class="home-intro">
+  <p class="home-role">Full Professor</p>
+  <p class="home-affiliation">Huazhong University of Science and Technology (HUST)</p>
+  <p class="home-interests">Generative Models <span>·</span> VLM <span>·</span> VLA <span>·</span> LLM</p>
+</div>
 
-招收 2027 级保研/推免的硕士研究生 4 人，博士 2人，欢迎与我联系！
+<aside class="home-recruiting" aria-label="Student recruitment" lang="zh">
+  <strong>2028 级研究生招生</strong>
+  <p>招收保研/推免硕士研究生 4 人、博士研究生 2 人，欢迎与我联系！</p>
+</aside>
 
-<a class="lab-link-highlight" href="https://taohu.me/lab">Group</a> ·
-[publications](/publications/) ·
-[Vincent教你学AI (rednote)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10) ·
-[cal.com](https://cal.com/hu-tao-leakvj/30min) ·
-[buy me a coffee](https://www.buymeacoffee.com/taohu620i) ·
-[admonymous](https://www.admonymous.co/hu-tao)
-
-<img src="https://ghchart.rshah.org/0076df/dongzhuoyao" alt="GitHub Contributions" style="width: 100%; max-width: 800px;">
-
-<small style="opacity: 0.3;"><a href="https://scholar.google.com/citations?hl=en&user=EchdyZEAAAAJ"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdongzhuoyao%2Facad-homepage%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" alt="Google Scholar"></a> · [visitor stats](https://clustrmaps.com/site/1ab0d)</small>
+<nav class="home-links" aria-label="Research and contact links">
+  <a class="lab-link-highlight" href="https://taohu.me/lab">VIBE Lab <span aria-hidden="true">↗</span></a>
+  <a class="home-publications-link" href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">→</span></a>
+  <a href="https://cal.com/hu-tao-leakvj/30min">Book a meeting</a>
+  <a href="https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10">Vincent教你学AI (rednote)</a>
+  <a href="https://www.buymeacoffee.com/taohu620i">Buy me a coffee</a>
+  <a href="https://www.admonymous.co/hu-tao">Anonymous feedback</a>
+</nav>
