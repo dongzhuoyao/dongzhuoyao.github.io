@@ -45,6 +45,12 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    {% if page.recent_preprints %}
+      <section aria-label="Recent preprints">
+        {{ page.recent_preprints | markdownify }}
+      </section>
+    {% endif %}
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
