@@ -23,7 +23,7 @@ announcements:
 
 招收 2027 级保研/推免的硕士研究生 4 人，博士 2人，欢迎与我联系！
 
-[Group](https://taohu.me/lab) ·
+<a class="lab-link-highlight" href="https://taohu.me/lab">Group</a> ·
 [publications](/publications/) ·
 [Vincent教你学AI (rednote)](https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10) ·
 [cal.com](https://cal.com/hu-tao-leakvj/30min) ·
@@ -33,4 +33,3 @@ announcements:
 <img src="https://ghchart.rshah.org/0076df/dongzhuoyao" alt="GitHub Contributions" style="width: 100%; max-width: 800px;">
 
 <small style="opacity: 0.3;"><a href="https://scholar.google.com/citations?hl=en&user=EchdyZEAAAAJ"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdongzhuoyao%2Facad-homepage%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations" alt="Google Scholar"></a> · [visitor stats](https://clustrmaps.com/site/1ab0d)</small>
-

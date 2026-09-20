@@ -47,6 +47,29 @@ p {
   margin-bottom: 10px;
 }
 
+// Emphasize the homepage link to the research group in both color themes.
+a.lab-link-highlight {
+  display: inline-block;
+  padding: 0.2em 0.65em;
+  border: 1px solid #d6a827;
+  border-radius: 0.35em;
+  background-color: #fff0b3;
+  color: #493600;
+  font-weight: 700;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #ffe082;
+    color: #493600;
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 3px;
+  }
+}
+
 // News section on homepage - clean minimal style
 .news {
   .table-responsive {
