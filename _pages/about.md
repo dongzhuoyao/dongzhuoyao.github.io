@@ -18,6 +18,6 @@ recent_preprints: |
   - **Aug 25, 2026** [From State to Action: OODA-Tool for Reliable Multi-Turn Tool Use](https://arxiv.org/abs/2608.24368)
 announcements:
   enabled: true
-  scrollable: true
-  limit: 2
+  scrollable: false
+  limit: 5
 ---
