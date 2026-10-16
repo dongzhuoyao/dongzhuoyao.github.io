@@ -34,6 +34,7 @@ pagination:
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
+        {% unless site.tags[tag] %}{% continue %}{% endunless %}
         <li>
           <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
         </li>
@@ -45,6 +46,7 @@ pagination:
         <p>&bull;</p>
       {% endif %}
       {% for category in site.display_categories %}
+        {% unless site.categories[category] %}{% continue %}{% endunless %}
         <li>
           <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
         </li>

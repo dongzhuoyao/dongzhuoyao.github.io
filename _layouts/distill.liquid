@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en" data-appearance="academic">
   <head>
-    {% include head.liquid %}
+    {% include academic-head.liquid %}
 
     <!-- Distill js -->
     <script src="{{ '/assets/js/distillpub/template.v2.js' | relative_url }}"></script>
@@ -52,12 +52,14 @@
     </script>
   </d-front-matter>
 
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-    <!-- Header -->
-    {% include header.liquid %}
-
+  <body class="academic-site academic-subpage">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="academic-shell">
+      {% include academic-header.liquid %}
+      <main id="main" class="academic-page">
+        <a class="academic-back-link" href="{{ '/' | relative_url }}">← Back to homepage</a>
     <!-- Content -->
-    <div class="post distill">
+    <div class="post distill academic-panel academic-page-content">
       <d-title>
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
@@ -123,7 +125,9 @@
     </div>
 
     <!-- Footer -->
-    {% include footer.liquid %}
+      </main>
+      {% include academic-footer.liquid %}
+    </div>
 
     <!-- JavaScripts -->
     {% include distill_scripts.liquid %}

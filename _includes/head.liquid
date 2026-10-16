@@ -80,7 +80,11 @@
     id="highlight_theme_dark"
   >
   <script>
-    initTheme();
+    {% if include.academic %}
+      applyTheme();
+    {% else %}
+      initTheme();
+    {% endif %}
   </script>
 {% endif %}
 

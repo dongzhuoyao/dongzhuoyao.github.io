@@ -1,22 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-appearance="academic">
 <head>
-  {% include head.liquid %}
-  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  {% include academic-head.liquid %}
 </head>
 <body class="academic-site">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="academic-shell">
-    <header class="academic-topbar">
-      <a class="academic-brand" href="{{ '/' | relative_url }}"><strong>Tao Hu <span>· 胡涛</span></strong><small>HUST · VIBE Lab</small></a>
-      <nav aria-label="Main navigation">
-        <a href="#research-keywords">Research</a><a href="#news">News</a><a href="#papers">Papers</a><a href="#background">Background</a><a href="#join">Join us</a>
-      </nav>
-    </header>
+    {% include academic-header.liquid %}
     <main id="main">
       <section class="academic-hero" aria-labelledby="profile-title">
         <div class="academic-intro">
-          <p class="eyebrow">WORLD MODELS · GENERATIVE AI · INTERACTIVE SIMULATION</p>
+          <p class="eyebrow">WORLD MODELS · GENERATIVE AI</p>
           <h1 id="profile-title">Tao Hu <span lang="zh">胡涛</span></h1>
           <p class="academic-position">Full Professor<br>Huazhong University of Science and Technology</p>
           <p class="academic-lead">World models for interactive, closed-loop simulation.</p>
@@ -28,21 +22,24 @@
         <aside class="academic-profile" aria-label="Profile and contact">
           <img class="academic-portrait" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Tao Hu" width="3072" height="4080">
           <div class="academic-profile-copy"><h2>Tao Hu · 胡涛</h2><p>Full Professor · HUST<br>VIBE Lab</p>
-            <div class="academic-profile-links"><a href="https://scholar.google.com/citations?user=EchdyZEAAAAJ">Google Scholar ↗</a><a href="https://github.com/dongzhuoyao">GitHub ↗</a><a href="mailto:taohu620@gmail.com">Email ↗</a><a href="https://cal.com/hu-tao-leakvj/30min">Book a meeting ↗</a></div>
+            <div class="academic-profile-links"><a href="https://scholar.google.com/citations?user=EchdyZEAAAAJ">Google Scholar ↗</a><a href="https://github.com/dongzhuoyao">GitHub ↗</a><a href="mailto:taohu620@gmail.com">Email ↗</a><a href="https://cal.com/hu-tao-leakvj/30min">Book a meeting ↗</a><a href="https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10">Rednote 小红书 ↗</a></div>
           </div>
         </aside>
       </section>
       <section id="research-keywords" class="academic-section academic-panel" aria-labelledby="keywords-title">
         <h2 id="keywords-title">Research Keywords</h2>
         <ul class="research-keywords">
-          <li>memory in world model</li>
-          <li>efficiency in world model</li>
+          <li>Memory in World Model</li>
+          <li>Efficiency in World Model</li>
           <li>Multiplayer World Models</li>
-          <li>rolling-based, continuation-based world model</li>
+          <li>Rolling-Based, Continuation-Based World Model</li>
           <li>Loop Transformer</li>
-          <li>tokenizer-free</li>
+          <li>Tokenizer-Free</li>
           <li>Continuous Discrete Diffusion</li>
         </ul>
+      </section>
+      <section id="join" class="academic-section join-panel" aria-labelledby="join-title">
+        <div><p class="eyebrow">JOIN VIBE LAB</p><h2 id="join-title" lang="zh">2028 级研究生招生</h2><p lang="zh">招收保研/推免硕士研究生 4 人、博士研究生 2 人，欢迎与我联系！</p></div><a class="primary-link" href="mailto:taohu620+application@gmail.com">Get in touch →</a>
       </section>
       <section id="news" class="academic-section academic-panel" aria-labelledby="news-title">
         <div class="section-heading"><div><p class="eyebrow">LATEST UPDATES</p><h2 id="news-title">News</h2></div><a href="{{ '/news/' | relative_url }}">All news →</a></div>
@@ -71,16 +68,12 @@
           <div><h3>Selected recognition</h3><ul class="academic-recognition"><li><strong>ICML 2026</strong> · Silver Reviewer Award</li><li><strong>NeurIPS 2024</strong> · Top Reviewer</li><li><strong>CVPR 2023</strong> · Doctoral Consortium travel support; selected among the top 13% of 411 applicants</li></ul></div>
         </div>
       </section>
-      <section id="join" class="academic-section join-panel" aria-labelledby="join-title">
-        <div><p class="eyebrow">JOIN VIBE LAB</p><h2 id="join-title" lang="zh">2028 级研究生招生</h2><p lang="zh">招收保研/推免硕士研究生 4 人、博士研究生 2 人，欢迎与我联系！</p></div><a class="primary-link" href="mailto:taohu620@gmail.com">Get in touch →</a>
-      </section>
       <section class="academic-section academic-panel academic-activity" aria-label="Activity and more links">
         {% include home-activity.liquid %}
-        <div class="academic-extra-links"><a href="https://www.xiaohongshu.com/user/profile/67af6461000000000e01ef10">Vincent教你学AI (rednote) ↗</a><a href="https://www.buymeacoffee.com/taohu620i">Buy me a coffee ↗</a><a href="https://www.admonymous.co/hu-tao">Anonymous feedback ↗</a></div>
       </section>
       {{ content }}
     </main>
-    <footer class="academic-footer"><span>© {{ site.time | date: '%Y' }} Tao Hu · HUST</span><a href="https://taohu.me/lab/">VIBE Lab ↗</a><a href="#main">Back to top ↑</a></footer>
+    {% include academic-footer.liquid %}
   </div>
   <!-- Preserve the existing visitor counter. -->
   <div style="display:none;">

@@ -288,17 +288,17 @@ jekyll-minifier:
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
-jekyll-archives-v2:
+jekyll-archives:
   posts:
     enabled: [year, tags, categories]
     layouts:
-      year: archive-year
-      tag: archive-tag
-      category: archive-category
+      year: archive
+      tags: archive
+      categories: archive
     permalinks:
       year: "/blog/:year/"
-      tag: "/blog/tag/:name/"
-      category: "/blog/category/:name/"
+      tags: "/blog/tag/:name/"
+      categories: "/blog/category/:name/"
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog

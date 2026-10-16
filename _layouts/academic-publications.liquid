@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" data-appearance="academic">
+<head>
+  {% include academic-head.liquid %}
+</head>
+<body class="academic-site academic-publications">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="academic-shell">
+    {% include academic-header.liquid %}
+    <main id="main">
+      <header class="publications-heading">
+        <p class="eyebrow">RESEARCH OUTPUT</p>
+        <h1>{{ page.title }}</h1>
+        <p>Research in world models, visual perception, and generative AI.</p>
+        <div class="academic-actions"><a href="{{ '/' | relative_url }}">← Back to homepage</a><a href="https://scholar.google.com/citations?user=EchdyZEAAAAJ">Google Scholar ↗</a></div>
+      </header>
+      <section class="academic-panel publications-panel" aria-label="Publication list">
+        {{ content }}
+      </section>
+    </main>
+    {% include academic-footer.liquid %}
+  </div>
+  {% include scripts.liquid %}
+</body>
+</html>
