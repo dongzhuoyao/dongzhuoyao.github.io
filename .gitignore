@@ -16,3 +16,8 @@ vendor
 CLAUDE.md
 .claude/
 .omx/
+
+# Citation collector runtime files
+__pycache__/
+*.pyc
+.cache/

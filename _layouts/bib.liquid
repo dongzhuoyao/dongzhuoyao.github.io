@@ -64,6 +64,12 @@
         {% assign author_is_self = false %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {%- if author.prefix != blank -%}
+          {%- assign author_last_html = author.prefix | append: ' ' | append: author_last_html -%}
+        {%- endif -%}
+        {%- if author.suffix != blank -%}
+          {%- assign author_last_html = author_last_html | append: ', ' | append: author.suffix -%}
+        {%- endif -%}
         {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
@@ -324,34 +330,7 @@
             ></span>
           {% endif %}
           {% if site.enable_publication_badges.google_scholar and entry_has_google_scholar_badge %}
-            <a
-              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id }}"
-              aria-label="Google Scholar link"
-              role="button"
-            >
-              {% assign citation_count = 0 %}
-              {% assign scholar_id_key = site.scholar_userid | append: ':' | append: entry.google_scholar_id %}
-              {% assign publication_key = entry.google_scholar_id %}
-
-              {% if site.data.citations.papers[scholar_id_key] %}
-                {% assign citation_count = site.data.citations.papers[scholar_id_key].citations %}
-              {% elsif site.data.citations.papers[publication_key] %}
-                {% assign citation_count = site.data.citations.papers[publication_key].citations %}
-              {% else %}
-                {% for paper in site.data.citations.papers %}
-                  {% assign paper_key = paper[0] %}
-                  {% if paper_key contains entry.google_scholar_id %}
-                    {% assign citation_count = paper[1].citations %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-
-              <img
-                src="https://img.shields.io/badge/scholar-{{ citation_count }}-4285F4?logo=googlescholar&labelColor=beige"
-                alt="{{ citation_count }} Google Scholar citations"
-              >
-            </a>
+            {% include scholar-badge.liquid scholar_id=entry.google_scholar_id %}
           {% endif %}
           {% if site.enable_publication_badges.inspirehep and entry_has_inspirehep_badge %}
             <a

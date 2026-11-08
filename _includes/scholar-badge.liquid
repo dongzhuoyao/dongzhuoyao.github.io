@@ -1,0 +1,7 @@
+{%- assign scholar_key = site.data.socials.scholar_userid | append: ':' | append: include.scholar_id -%}
+{%- assign citation_paper = site.data.citations.papers[scholar_key] -%}
+{%- if site.data.citations.metadata.scholar_user_id == site.data.socials.scholar_userid and citation_paper -%}
+  <a class="scholar-citation-badge" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user={{ site.data.socials.scholar_userid }}&amp;citation_for_view={{ scholar_key }}" aria-label="{{ citation_paper.citations }} Google Scholar citations" title="Google Scholar · Updated {{ site.data.citations.metadata.last_updated }}">
+    <span>Scholar</span><strong>{{ citation_paper.citations }}</strong>
+  </a>
+{%- endif -%}

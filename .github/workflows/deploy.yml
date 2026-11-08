@@ -15,6 +15,9 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "bin/update_scholar_citations.py"
+      - "bin/requirements-citations.txt"
+      - "tests/test_scholar_citations.py"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -44,6 +47,9 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "bin/update_scholar_citations.py"
+      - "bin/requirements-citations.txt"
+      - "tests/test_scholar_citations.py"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -59,6 +65,8 @@ on:
       - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
+  schedule:
+    - cron: "47 8 * * *" # Daily at 16:47 China time, after the shared collector.
   workflow_dispatch:
 
 permissions:
@@ -81,6 +89,9 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+          cache-dependency-path: |
+            requirements.txt
+            bin/requirements-citations.txt
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -88,6 +99,22 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Restore last successful citation snapshot
+        if: github.event_name != 'pull_request'
+        uses: actions/cache@v4
+        with:
+          path: .cache/scholar/citations.yml
+          key: scholar-EchdyZEAAAAJ-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            scholar-EchdyZEAAAAJ-v1-${{ github.ref_name }}-
+      - name: Install and validate citation importer
+        run: |
+          pip3 install -r bin/requirements-citations.txt
+          python3 -m unittest discover -s tests -v
+      - name: Import shared Google Scholar citations
+        if: github.event_name != 'pull_request'
+        continue-on-error: true # Keep the last valid snapshot if the import fails.
+        run: python3 bin/update_scholar_citations.py --cache .cache/scholar/citations.yml
       - name: Install ImageMagick
         run: sudo apt-get install -y imagemagick
       - name: Install and Build 🔧
