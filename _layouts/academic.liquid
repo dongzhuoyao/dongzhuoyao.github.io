@@ -36,6 +36,7 @@
           <li>Loop Transformer</li>
           <li>Tokenizer-Free</li>
           <li>Continuous Discrete Diffusion</li>
+          <li>Weight-Space Programming</li>
         </ul>
       </section>
       <section id="join" class="academic-section join-panel" aria-labelledby="join-title">
@@ -57,16 +58,23 @@
             <div><dt>Apr 2026–present</dt><dd><strong>Full Professor · HUST</strong><span>Generative artificial intelligence research.</span></dd></div>
             <div><dt>Sep 2026–present</dt><dd><strong>Chief Technical Expert · Dongfeng Motor R&D Institute</strong><span>Part-time · World models and interactive closed-loop simulation.</span></dd></div>
             <div><dt>Nov 2023–Nov 2025</dt><dd><strong>Postdoctoral Researcher · LMU Munich</strong><span>Ommer-Lab · Björn Ommer.</span></dd></div>
-            <div><dt>Feb 2023–Nov 2024</dt><dd><strong>Visiting Researcher · University of Amsterdam</strong><span>VISLAB · Cees G. M. Snoek.</span></dd></div>
-          </dl><p class="background-note">Earlier research internships at AWS Rekognition (2020), Megvii Face++ (2017–2018), and Xiaomi (2017).</p></div>
+            <div><dt>2018–2023</dt><dd><strong>Ph.D. Researcher · University of Amsterdam</strong><span>VISLAB · Cees G. M. Snoek and Pascal Mettes.</span></dd></div>
+          </dl>
+          <h3 class="experience-subheading">Industry internships</h3>
+          <dl class="academic-timeline">
+            <div><dt>Jun 2020–Oct 2020</dt><dd><strong>Amazon · AWS Rekognition</strong><span class="experience-role">Applied Scientist Intern</span><span>Semi-supervised and few-shot learning.</span></dd></div>
+            <div><dt>Jul 2017–May 2018</dt><dd><strong>Megvii Face++</strong><span class="experience-role">Research Intern</span><span>Human pose estimation.</span></dd></div>
+          </dl>
+          <p class="background-note">Earlier research internship at Xiaomi (2017).</p></div>
         </div>
       </section>
-      <section class="academic-section academic-panel" aria-labelledby="community-title">
-        <p class="eyebrow">ACADEMIC COMMUNITY</p><h2 id="community-title">Service & recognition</h2>
-        <div class="background-grid">
-          <div><h3>Service & mentoring</h3><p>Co-organizer of the CVPR 2025 eVLM and ECCV 2024 Audio-Visual Generative Learning workshops; lead organizer of the NxtAim workshop on the theory and practice of Stable Diffusion.</p><p>Area Chair for CVPR and ECCV workshops in 2024, and Session Chair for an AAAI 2025 computer vision oral session.</p><p>Reviewer for CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, AAAI, and journals including T-PAMI and TMLR.</p><p>Teaching and co-supervision at LMU Munich and the University of Amsterdam, spanning computer vision, generative models, and representation learning.</p></div>
-          <div><h3>Selected recognition</h3><ul class="academic-recognition"><li><strong>ICML 2026</strong> · Silver Reviewer Award</li><li><strong>NeurIPS 2024</strong> · Top Reviewer</li><li><strong>CVPR 2023</strong> · Doctoral Consortium travel support; selected among the top 13% of 411 applicants</li></ul></div>
-        </div>
+      <section id="service" class="academic-section academic-panel" aria-labelledby="community-title">
+        <p class="eyebrow">ACADEMIC COMMUNITY</p><h2 id="community-title">Service</h2>
+        <dl class="academic-service">
+          {% for group in site.data.academic_service %}
+            <div><dt>{{ group.title }}</dt><dd><ul>{% for item in group.items %}<li>{{ item }}</li>{% endfor %}</ul></dd></div>
+          {% endfor %}
+        </dl>
       </section>
       <section class="academic-section academic-panel academic-activity" aria-label="Activity and more links">
         {% include home-activity.liquid %}

@@ -109,15 +109,25 @@
 .background-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
 .background-grid p { font-size: 14px; color: var(--muted); }
 .academic-timeline { margin: 0; }
-.academic-timeline > div { border-top: 1px solid var(--line); padding: 17px 0; }
+.academic-timeline > div { display: grid; grid-template-columns: 155px minmax(0, 1fr); gap: 24px; border-top: 1px solid var(--line); padding: 17px 0; }
 .academic-timeline dt { color: var(--muted); font-size: 12px; font-weight: 400; margin-bottom: 5px; }
 .academic-timeline dd { margin: 0; font-size: 14px; }
 .academic-timeline dd span { display: block; color: var(--muted); margin-top: 4px; }
+.academic-timeline dd .experience-role { color: var(--ink); }
+.experience-subheading { margin-top: 30px; }
+.academic-service { margin: 0; }
+.academic-service > div { display: grid; grid-template-columns: 155px minmax(0, 1fr); gap: 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+.academic-service dt { font-size: 14px; font-weight: 650; color: var(--ink); }
+.academic-service dd { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.academic-service ul { list-style: none; padding: 0; margin: 0; }
+.academic-service li + li { margin-top: 6px; }
 .academic-recognition { padding-left: 18px; margin-bottom: 26px; font-size: 14px; }
 .academic-recognition li { margin-bottom: 12px; }
 .academic-site .background-note { font-size: 13px; color: var(--muted); }
 @media (max-width: 680px) {
  .background-grid { grid-template-columns: 1fr; gap: 24px; }
+ .academic-timeline > div { grid-template-columns: 1fr; gap: 4px; }
+ .academic-service > div { grid-template-columns: 1fr; gap: 10px; }
  .academic-topbar nav { flex-wrap: wrap; justify-content: flex-start; gap: 8px 16px; }
 }
 

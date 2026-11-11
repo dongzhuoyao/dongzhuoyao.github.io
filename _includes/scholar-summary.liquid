@@ -1,0 +1,6 @@
+{% if site.data.citations.metadata.scholar_user_id == site.data.socials.scholar_userid and site.data.citations.summary %}
+  <div class="scholar-summary">
+    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}&amp;hl=en"><strong>{{ site.data.citations.summary.total_citations }}</strong> citations on Google Scholar ↗</a>
+    <small>Updated {{ site.data.citations.metadata.last_updated }}</small>
+  </div>
+{% endif %}
