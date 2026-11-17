@@ -7,6 +7,9 @@ on:
       - main
     paths:
       - "assets/**"
+      - "lab/**"
+      - "shared/**"
+      - "scripts/**"
       - "_sass/**"
       - "_scripts/**"
       - "**.bib"
@@ -39,6 +42,9 @@ on:
       - main
     paths:
       - "assets/**"
+      - "lab/**"
+      - "shared/**"
+      - "scripts/**"
       - "_sass/**"
       - "_scripts/**"
       - "**.bib"
@@ -99,6 +105,15 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Update lab/_config.yml ⚙️
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          commitChange: false
+          valueFile: "lab/_config.yml"
+          propertyPath: "giscus.repo"
+          value: ${{ github.repository }}
+      - name: Validate shared site content
+        run: ruby scripts/sync_shared_content.rb --check
       - name: Restore last successful citation snapshot
         if: github.event_name != 'pull_request'
         uses: actions/cache@v4
@@ -115,18 +130,17 @@ jobs:
         if: github.event_name != 'pull_request'
         continue-on-error: true # Keep the last valid snapshot if the import fails.
         run: python3 bin/update_scholar_citations.py --cache .cache/scholar/citations.yml
-      - name: Install ImageMagick
-        run: sudo apt-get install -y imagemagick
-      - name: Install and Build 🔧
+      - name: Install and build both sites 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
-      - name: Purge unused CSS 🧹
+          scripts/build_all.sh
+      - name: Purge unused CSS for both sites 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+          cd lab
+          SITE_DIR=../_site/lab purgecss -c purgecss.config.js
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4

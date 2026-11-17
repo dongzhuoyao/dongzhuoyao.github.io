@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Brain-inspired neural network pattern -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular background -->
+  <circle cx="100" cy="100" r="90" fill="url(#gradient1)" />
+
+  <!-- Stylized brain/network nodes -->
+  <g fill="#ffffff">
+    <!-- Central node -->
+    <circle cx="100" cy="100" r="12" />
+
+    <!-- Surrounding nodes -->
+    <circle cx="60" cy="70" r="8" />
+    <circle cx="140" cy="70" r="8" />
+    <circle cx="55" cy="120" r="8" />
+    <circle cx="145" cy="120" r="8" />
+    <circle cx="100" cy="55" r="8" />
+    <circle cx="100" cy="145" r="8" />
+  </g>
+
+  <!-- Connections -->
+  <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7">
+    <line x1="100" y1="100" x2="60" y2="70" />
+    <line x1="100" y1="100" x2="140" y2="70" />
+    <line x1="100" y1="100" x2="55" y2="120" />
+    <line x1="100" y1="100" x2="145" y2="120" />
+    <line x1="100" y1="100" x2="100" y2="55" />
+    <line x1="100" y1="100" x2="100" y2="145" />
+    <!-- Cross connections -->
+    <line x1="60" y1="70" x2="100" y2="55" />
+    <line x1="140" y1="70" x2="100" y2="55" />
+    <line x1="55" y1="120" x2="100" y2="145" />
+    <line x1="145" y1="120" x2="100" y2="145" />
+  </g>
+
+  <!-- VIBE text -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#1f2937">VIBE</text>
+</svg>

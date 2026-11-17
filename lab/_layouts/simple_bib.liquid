@@ -1,0 +1,52 @@
+---
+---
+<div id="{{ entry.key }}" class="publication-entry">
+  <div class="title">{{ entry.title }}</div>
+
+  <div class="author">
+    {%- for author in entry.author_array -%}
+      {{- author.first -}}
+      {%- if author.prefix != blank %} {{ author.prefix }}{% endif %}
+      {{- ' ' -}}{{- author.last -}}
+      {%- if author.suffix != blank %}, {{ author.suffix }}{% endif %}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}
+  </div>
+
+  {% assign publication_venue = entry.booktitle %}
+  {% if entry.abbr %}
+    {% assign publication_venue = entry.abbr %}
+  {% elsif entry.journal %}
+    {% assign publication_venue = entry.journal %}
+  {% endif %}
+  {% if entry.status == 'preprint' %}
+    {% assign publication_venue = 'arXiv' %}
+  {% endif %}
+  <div class="publication-meta">
+    {% if publication_venue %}
+      <span class="publication-venue">{{ publication_venue }}</span>
+    {% endif %}
+    {% if entry.year %}
+      <span class="publication-year">{{ entry.year }}</span>
+    {% endif %}
+    {% if entry.highlight %}
+      <span class="publication-highlight">{{ entry.highlight }}</span>
+    {% endif %}
+  </div>
+
+  <div class="links">
+    {% if entry.pdf %}
+      {% if entry.pdf contains '://' %}
+        <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" aria-label="Open PDF for {{ entry.title | strip_html | escape }}" title="Open PDF: {{ entry.title | strip_html | escape }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF</a>
+      {% else %}
+        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" aria-label="Open PDF for {{ entry.title | strip_html | escape }}" title="Open PDF: {{ entry.title | strip_html | escape }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF</a>
+      {% endif %}
+    {% endif %}
+    {% if entry.code %}
+      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" aria-label="Open code for {{ entry.title | strip_html | escape }}" title="Open code: {{ entry.title | strip_html | escape }}"><i class="fa-solid fa-code" aria-hidden="true"></i> Code</a>
+    {% endif %}
+    {% if entry.website %}
+      <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" aria-label="Open website for {{ entry.title | strip_html | escape }}" title="Open website: {{ entry.title | strip_html | escape }}"><i class="fa-solid fa-globe" aria-hidden="true"></i> Website</a>
+    {% endif %}
+  </div>
+</div>
