@@ -14,8 +14,9 @@ social: false
 ---
 
 <div class="lab-hero">
-  <img src="{{ '/assets/img/vibe-logo.svg' | relative_url }}" class="lab-logo" width="150" height="150" alt="VIBE Lab logo">
-  <p class="lab-intro">We are <strong>VIBE Lab</strong> at <strong><a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology (HUST)</a></strong>. We develop generative intelligence systems that connect large-scale models with real-world perception and action.</p>
+  <p class="lab-eyebrow">VIBE Lab · HUST</p>
+  <p class="lab-intro">We develop <strong>generative intelligence systems</strong> that connect large-scale models with real-world perception and action.</p>
+  <p class="lab-affiliation">Based at <a href="https://www.hust.edu.cn/">Huazhong University of Science and Technology</a>.</p>
 </div>
 
 <div id="join-us" class="alert alert-warning join-us-card mb-4" role="region" aria-label="Join VIBE Lab">

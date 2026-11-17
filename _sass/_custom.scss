@@ -101,7 +101,7 @@ p {
   isolation: isolate;
   overflow: hidden;
   margin-bottom: 1.25rem;
-  padding: 2rem 1.5rem 1.75rem;
+  padding: 2.25rem 2.5rem 2.15rem;
   border: 1px solid color-mix(in srgb, var(--global-theme-color) 18%, var(--global-divider-color));
   border-radius: 18px;
   background:
@@ -122,20 +122,34 @@ p {
   content: "";
 }
 
-.lab-logo {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 1rem;
-  filter: drop-shadow(0 10px 20px rgba(79, 70, 229, 0.16));
+.lab-eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .lab-intro {
-  max-width: 720px;
-  margin: 0 auto;
-  font-size: 1.08rem;
-  line-height: 1.7;
-  text-align: center;
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(1.2rem, 2.2vw, 1.48rem);
+  line-height: 1.55;
+  letter-spacing: -0.012em;
+  text-align: left;
+}
+
+.lab-affiliation {
+  margin: 0.75rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.lab-affiliation a {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .join-us-card {
@@ -497,23 +511,16 @@ h2[id] {
   }
 
   .lab-hero {
-    padding: 1.4rem 1rem 1.25rem;
+    padding: 1.45rem 1.15rem 1.35rem;
     border-radius: 14px;
   }
 
-  .lab-logo {
-    width: 118px;
-    height: 118px;
-    margin-bottom: 0.75rem;
-  }
-
-  .lab-intro,
   .join-us-copy {
     text-align: left;
   }
 
   .lab-intro {
-    font-size: 1rem;
+    font-size: 1.08rem;
   }
 
   .join-us-card {
