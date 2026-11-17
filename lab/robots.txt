@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://taohu.me/lab/sitemap.xml

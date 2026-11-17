@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dongzhuoyao.github.io/sitemap.xml
+Sitemap: https://taohu.me/sitemap.xml
