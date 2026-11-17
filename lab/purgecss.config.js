@@ -1,6 +1,8 @@
+const siteDir = process.env.SITE_DIR || "_site";
+
 module.exports = {
-  content: ["_site/**/*.html", "_site/**/*.js"],
-  css: ["_site/assets/css/*.css"],
-  output: "_site/assets/css/",
-  skippedContentGlobs: ["_site/assets/**/*.html"],
+  content: [`${siteDir}/**/*.html`, `${siteDir}/**/*.js`],
+  css: [`${siteDir}/assets/css/*.css`],
+  output: `${siteDir}/assets/css/`,
+  skippedContentGlobs: [`${siteDir}/assets/**/*.html`],
 };

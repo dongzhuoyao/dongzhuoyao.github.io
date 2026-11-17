@@ -18,7 +18,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 future: true # include future-dated news items
-url: https://dongzhuoyao.github.io # the base hostname & protocol for your site
+url: https://taohu.me # the canonical hostname for the public site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -223,6 +223,9 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - lab/
+  - shared/
+  - scripts/
   - bin/
   - tests/
   - CONTRIBUTING.md
@@ -239,6 +242,7 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - assets/jupyter/blog.ipynb
   - purgecss.config.js
   - README.md
   - readme_preview/

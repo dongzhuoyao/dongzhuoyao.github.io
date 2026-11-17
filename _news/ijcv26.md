@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[Diversifying Similar Subjects for Text-to-image Synthesis with Self-Cross Diffusion Guidance](/publications/) is accepted by IJCV, congrats to Weimin, Jieke, and Meng.
+[Diversifying Similar Subjects for Text-to-image Synthesis with Self-Cross Diffusion Guidance]({{ '/publications/' | relative_url }}) is accepted by IJCV, congrats to Weimin, Jieke, and Meng.

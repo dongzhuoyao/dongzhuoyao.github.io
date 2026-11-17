@@ -6,4 +6,4 @@ related_posts: false
 ---
 
 
-[Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions](https://arxiv.org/abs/2403.17064) accepted by CVPR 2025. 
+[Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions](https://arxiv.org/abs/2403.17064) accepted by CVPR 2025.

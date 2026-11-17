@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 I am selected for CVPR 2023, ICCV 2023, and BMVC 2023 Doctoral Consortium. Here is the [Summary of my PhD Research]({{ '/assets/pdf/rs_taohu.pdf' | relative_url }}).
-
