@@ -1,0 +1,36 @@
+/*******************************************************************************
+ * Footer styles
+ ******************************************************************************/
+
+footer.fixed-bottom {
+  background-color: var(--global-bg-color);
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.75rem;
+
+  .container {
+    color: var(--global-text-color-light);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+  }
+
+  a {
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+footer.sticky-bottom {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 0.9rem;
+
+  .container {
+    text-align: center;
+  }
+}

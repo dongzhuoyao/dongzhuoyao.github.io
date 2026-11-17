@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 628" role="img" aria-labelledby="title desc">
+  <title id="title">VIBE 实验室 2027 招生海报</title>
+  <desc id="desc">华中科技大学 VIBE 实验室 2027 年秋季招收博士和硕士研究生的中文广告图。</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1d2a52" />
+      <stop offset="100%" stop-color="#0b3f5f" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="25%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#5ce1e6" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#5ce1e6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="pill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="628" fill="url(#bg)" />
+  <rect width="1200" height="628" fill="url(#glow1)" />
+  <rect width="1200" height="628" fill="url(#glow2)" />
+
+  <g transform="translate(90 90)" fill="#dbeafe" font-family="'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif">
+    <text x="0" y="36" font-size="20" letter-spacing="3" fill="#7dd3fc">VISION • INTELLIGENCE • BRAIN • EMBODIMENT</text>
+    <text x="0" y="108" font-size="54" font-weight="700">VIBE 视觉智能与脑机实验室</text>
+    <text x="0" y="162" font-size="28" fill="#e0f2fe">2027 秋季招生 | 博士 · 硕士</text>
+
+    <g transform="translate(0 210)" font-size="24" fill="#e2e8f0">
+      <text y="0">研究方向：生成式 AI · 大视觉模型 · 机器人学习 · 脑机接口</text>
+      <text y="46">资源支持：充足 GPU、国际合作网络、顶会论文发表机会</text>
+      <text y="92">地点：华中科技大学 （武汉）</text>
+    </g>
+
+    <g transform="translate(0 360)" font-size="22">
+      <rect x="0" y="-34" rx="28" ry="28" width="520" height="64" fill="url(#pill)" filter="url(#shadow)" />
+      <text x="26" y="8" font-size="24" font-weight="700" fill="#0f172a">发送简历 → taohu620@gmail.com</text>
+    </g>
+
+    <g transform="translate(0 438)" font-size="18" fill="#94a3b8">
+      <text y="0">了解更多：dongzhuoyao.github.io/lab</text>
+      <text y="34">博士生导师：胡涛 · PhD 阿姆斯特丹大学 · 前 LMU/CompVis 博士后</text>
+    </g>
+  </g>
+
+  <g transform="translate(820 80)" fill="none" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="2">
+    <circle cx="120" cy="80" r="70" />
+    <circle cx="40" cy="220" r="110" />
+    <circle cx="210" cy="260" r="90" />
+    <polyline points="40,220 120,80 210,260" stroke-opacity="0.4" />
+  </g>
+
+  <g transform="translate(760 360)" fill="#c7d2fe" fill-opacity="0.35">
+    <rect x="0" y="0" width="60" height="120" rx="16" />
+    <rect x="90" y="-20" width="48" height="160" rx="14" />
+    <rect x="170" y="30" width="64" height="110" rx="18" />
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+name: Check website links
+
+on:
+  workflow_run:
+    workflows: [Deploy site]
+    types: [completed]
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-link-check
+  cancel-in-progress: true
+
+jobs:
+  link-checker:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.5"
+          bundler-cache: true
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --destination _linkcheck_root/lab
+
+      - name: Check internal links
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          fail: true
+          format: markdown
+          jobSummary: true
+          args: >-
+            --offline
+            --root-dir '${{ github.workspace }}/_linkcheck_root'
+            --index-files index.html
+            --verbose
+            --no-progress
+            '_linkcheck_root/lab/**/*.html'
+
+      - name: Check external links
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          fail: true
+          format: markdown
+          jobSummary: true
+          args: >-
+            --base-url https://taohu.me
+            --max-retries 3
+            --retry-wait-time 2
+            --accept '100..=103,200..=299,403,429'
+            --exclude '^https://taohu\.me/lab/'
+            --verbose
+            --no-progress
+            '_linkcheck_root/lab/**/*.html'
