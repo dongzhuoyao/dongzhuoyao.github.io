@@ -108,15 +108,6 @@ His work has appeared at CVPR, ICCV, ECCV, NeurIPS, ICLR, AAAI, and T-PAMI. Sele
     <h6 class="mb-0">Gezhi Zhu</h6>
     <p class="text-muted small member-meta">Incoming Master’s Student (2027–Present)<br>Bachelor’s, HUST</p>
   </div>
-  <div class="col-6 col-md-3 text-center person-card">
-    <a href="https://yuanyiyan.com/" aria-label="Yuanyi Yan personal homepage">
-      <img src="{{ '/assets/img/members/yuanyi-yan.jpg' | relative_url }}" class="profile-avatar" width="120" height="120" loading="lazy" decoding="async" alt="Yuanyi Yan">
-    </a>
-    <h6 class="mb-0"><a href="https://yuanyiyan.com/">Yuanyi Yan</a></h6>
-    <p class="text-muted small member-meta">Research Intern<br>Bachelor’s Student, HUST (2024–Current)</p>
-    <p class="small member-focus">Generative models · embodied AI</p>
-    <p class="small member-links"><a href="https://yuanyiyan.com/">Homepage</a></p>
-  </div>
 </div>
 
 ---
@@ -235,5 +226,21 @@ His work has appeared at CVPR, ICCV, ECCV, NeurIPS, ICLR, AAAI, and T-PAMI. Sele
     </a>
     <h6 class="mb-0"><a href="https://habibian.github.io/">Amirhossein Habibian</a></h6>
     <p class="text-muted small">Qualcomm AI Research · <a href="https://scholar.google.com/citations?user=RZ9pOY4AAAAJ&hl=en">Scholar</a></p>
+  </div>
+</div>
+
+---
+
+## Past Interns
+
+<div class="row people-grid">
+  <div class="col-6 col-md-3 text-center person-card">
+    <a href="https://yuanyiyan.com/" aria-label="Yuanyi Yan personal homepage">
+      <img src="{{ '/assets/img/members/yuanyi-yan.jpg' | relative_url }}" class="profile-avatar" width="120" height="120" loading="lazy" decoding="async" alt="Yuanyi Yan">
+    </a>
+    <h6 class="mb-0"><a href="https://yuanyiyan.com/">Yuanyi Yan</a></h6>
+    <p class="text-muted small member-meta">Past Research Intern<br>Bachelor’s Student, HUST (2024–Current)</p>
+    <p class="small member-focus">Generative models · embodied AI</p>
+    <p class="small member-links"><a href="https://yuanyiyan.com/">Homepage</a></p>
   </div>
 </div>
