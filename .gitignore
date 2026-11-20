@@ -21,3 +21,6 @@ CLAUDE.md
 __pycache__/
 *.pyc
 .cache/
+
+# Private local connection to the Overleaf resume repository
+/.resume-sync.local.json
