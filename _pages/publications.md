@@ -17,8 +17,8 @@ nav_order: 2
 <div class="publications">
 
 <h2 class="bibliography">Preprints</h2>
-{% bibliography --group_by none --group_order descending --query @*[booktitle=Arxiv] %}
+{% bibliography --group_by none --group_order descending --query @*[status=preprint] %}
 
-{% bibliography --group_by year --group_order descending --query @*[booktitle!=Arxiv] %}
+{% bibliography --group_by year --group_order descending --query @*[status!=preprint] %}
 
 </div>

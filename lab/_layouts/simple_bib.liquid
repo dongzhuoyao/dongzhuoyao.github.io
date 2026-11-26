@@ -5,10 +5,33 @@
 
   <div class="author">
     {%- for author in entry.author_array -%}
-      {{- author.first -}}
-      {%- if author.prefix != blank %} {{ author.prefix }}{% endif %}
-      {{- ' ' -}}{{- author.last -}}
-      {%- if author.suffix != blank %}, {{ author.suffix }}{% endif %}
+      {% assign coauthor_url = null %}
+      {%- assign clean_last_name = author.last | downcase | remove_accents -%}
+      {% assign coauthor_entries = site.data.coauthors[clean_last_name] %}
+      {% unless coauthor_entries %}
+        {% assign coauthor_entries = site.data.coauthors[author.last] %}
+      {% endunless %}
+      {% if coauthor_entries %}
+        {%- for coauthor in coauthor_entries -%}
+          {% if coauthor.firstname contains author.first %}
+            {%- assign coauthor_url = coauthor.url -%}
+            {% break %}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if coauthor_url -%}
+        <a href="{{ coauthor_url }}">
+          {{- author.first -}}
+          {%- if author.prefix != blank %} {{ author.prefix }}{% endif %}
+          {{- ' ' -}}{{- author.last -}}
+          {%- if author.suffix != blank %}, {{ author.suffix }}{% endif -%}
+        </a>
+      {%- else -%}
+        {{- author.first -}}
+        {%- if author.prefix != blank %} {{ author.prefix }}{% endif %}
+        {{- ' ' -}}{{- author.last -}}
+        {%- if author.suffix != blank %}, {{ author.suffix }}{% endif -%}
+      {%- endif -%}
       {%- unless forloop.last %}, {% endunless -%}
     {%- endfor -%}
   </div>
@@ -19,8 +42,8 @@
   {% elsif entry.journal %}
     {% assign publication_venue = entry.journal %}
   {% endif %}
-  {% if entry.status == 'preprint' %}
-    {% assign publication_venue = 'arXiv' %}
+  {% if entry.status == 'preprint' and publication_venue == blank %}
+    {% assign publication_venue = 'Preprint' %}
   {% endif %}
   <div class="publication-meta">
     {% if publication_venue %}

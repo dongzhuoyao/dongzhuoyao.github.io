@@ -44,6 +44,36 @@
 "Chen":
   - firstname: ["Yunlu"]
     url: https://yunlu-chen.github.io/
+  - firstname: ["Shuo"]
+    url: https://shanshuo.github.io/
+  - firstname: ["Yang"]
+    url: https://github.com/cheyan9
+
+"Shen":
+  - firstname: ["Canyu"]
+    url: https://github.com/shuiiiiyu
+  - firstname: ["Kaitai"]
+    url: https://github.com/Kaitai-Shen
+
+"Zhu":
+  - firstname: ["Gezhi"]
+    url: https://github.com/TetuDegit
+
+"Qu":
+  - firstname: ["Chengsong"]
+    url: https://github.com/Qthrive
+
+"Li":
+  - firstname: ["Runting"]
+    url: https://scholar.google.com/citations?user=CwT5bq4AAAAJ&hl=en
+
+"Zhou":
+  - firstname: ["Xuemei"]
+    url: https://www.cwi.nl/en/people/xuemei-zhou/
+
+"Long":
+  - firstname: ["Teng"]
+    url: https://tenglon.github.io/
 
  
 "Caron":
@@ -61,10 +91,6 @@
 "Zhao":
   - firstname: ["Deli"]
     url: https://scholar.google.com/citations?user=7LhjCn0AAAAJ&hl=en
-
-"Chen":
-  - firstname: ["Shuo"]
-    url: https://shanshuo.github.io/
 
 "Mu":
   - firstname: ["Yadong"]
